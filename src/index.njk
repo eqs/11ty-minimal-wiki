@@ -1,1 +1,14 @@
 <h1>It works!</h1>
+
+{% set contents = collections.all | eleventyNavigation %}
+{% set content = contents[0] %}
+{%- for chapter in content.children -%}
+  <h4>{{ chapter.title }}</h4>
+  {%- for section in chapter.children -%}
+    <div class="content-row">
+      <a href="{{ section.url | url }}">
+        {{ section.title }}
+      </a>
+    </div>
+  {%- endfor -%}
+{%- endfor -%}
