@@ -1,0 +1,20 @@
+{
+  "name": "11ty-minimal-wiki",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}
